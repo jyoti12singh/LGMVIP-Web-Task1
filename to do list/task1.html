@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" ,content="IE-edge">
+      <meta name="viewport" content="width-device-width,initial-scale=1.0"> 
+      <title>TO-DO LIST APP</title>
+      <link href="task1.css" rel="stylesheet"/>
+      <script src="task1.js" defer></script> <!--here check-->
+    </head>
+    <body onload="time()">
+        <div class="todo-container">
+          <div class="date-hours">
+            <p id="date">Date</p>
+            <p id="hour">Hour</p>
+          </div>
+          <header>
+            <h1 align="center">TO-DO LIST
+              <img src="icon.png" width="50" height="60"> </h1>
+          </header>
+          <form action="" id="todo-form">
+               <p>Add Your Task Here</p>
+               <div class="form-control">
+                <input type="text" id="todo-input" placeholder="Type Here About your Task">
+                <button type="submit">
+                 <i class="fa-thin fa-plus">Add</i>
+                </button>
+               </div>
+          </form>
+          <!--edit the tasks-->
+          <form action="" id="edit-form" class="hide">
+            <p>Edit Your Task</p>
+            <div class="form-control">
+             <input type="text" id="edit-input" placeholder="Type Here About your Task">
+             <button type="submit">
+               <i class="fa-solid fa-check-double">Edit</i>
+             </button>
+            </div>
+            <button type="button" id="cancel-edit-btn">Cancel </button>
+       </form>
+       <!--task list-->
+       <div class="todo-list" id="todo-list">
+        <div class="todo">
+          <h3>Some Default Task</h3>
+          <button class="finish-todo">
+            <i class="fa-solid fa-check">Done</i>
+          </button>
+          <button class="edit-todo">
+            <i class="fa-solid fa-pen">Edit</i>
+          </button>
+          <button class="remove-todo">
+            <i class="fa-solid fa-xmark">Delete</i>
+          </button>
+        </div>
+       </div>
+        </div>
+    </body>
+</html>
